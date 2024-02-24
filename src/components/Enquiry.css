@@ -1,0 +1,17 @@
+.marquee {
+    overflow: hidden;
+  }
+  
+  .marquee p {
+    animation: marquee 20s linear infinite;
+  }
+  
+  .marquee:hover p {
+    animation-play-state: paused;
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
